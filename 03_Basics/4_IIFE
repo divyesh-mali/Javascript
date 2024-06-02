@@ -1,0 +1,14 @@
+// IIFE : Immediately Invoked Function Expression
+// It is used to execute the function immediately after it is created in order to avoid pollution from the global scope
+
+(function chai(){
+    // named IIFE
+    console.log(`DB CONNECTED`);
+})();
+//You've to explicitly add ';' at the end of the function expression to avoid any errors otherwise the further code will give error and not execute as the first function haven't ended with ';'
+
+// Syntax : (function(){})(args)
+
+( (name) => {
+    console.log(`DB CONNECTED TWO ${name}`);
+} )('hitesh')
