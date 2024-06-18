@@ -23,7 +23,7 @@
     addLanguage("python")
     addLanguage("typescript")
 
-    // Use this method of 'addOptiLanguage' to add DOM elements instead of above method 'addLanguage' because it is more efficient.
+    // Use this method of 'addOptiLanguage' to add DOM elements instead of above method 'addLanguage' because it is less efficient as it has to traverse entire tree each time we add a new element.
     function addOptiLanguage(langName){
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(langName))
